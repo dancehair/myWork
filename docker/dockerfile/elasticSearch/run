@@ -1,0 +1,7 @@
+docker run --name=es_test -it \
+--volume=/root/es_test/config:/root/elasticsearch-1.5.1/config \
+--volume=/root/es_test/log:/root/elasticsearch-1.5.1/log \
+--volume=/root/es_test/data:/root/elasticsearch-1.5.1/data \
+--memory='2g' \
+elktest:0.1 \
+/bin/bash
